@@ -6,6 +6,6 @@ DevOps Course
 3. Micro-Services Vs Monolithic Applications, Docker, Containers
 4. Kubernetes --> EKS
 5. Promentheus/Grafana, ELK --> Monitoring Tools
-6. Jenkins, Maven, Jenkinsfile
+6. Jenkins, CI/CD pipeline, Maven, Jenkinsfile
 7. Ansible
 8. Terraform
