@@ -1,0 +1,11 @@
+DevOps Course
+--------------
+
+1. DevOps Introduction --> Before DevOps, SDLC, DevOps Lifecycle
+2. GIT/GitHub
+3. Micro-Services Vs Monolithic Applications, Docker, Containers
+4. Kubernetes --> EKS
+5. Promentheus/Grafana, ELK --> Monitoring Tools
+6. Jenkins, Maven, Jenkinsfile
+7. Ansible
+8. Terraform
