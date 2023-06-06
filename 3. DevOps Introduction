@@ -1,0 +1,33 @@
+
+DevOps Introduction --> Before DevOps, SDLC, DevOps Lifecycle
+
+SDLC
+Before DevOps
+DevOps
+DevOps Lifecycle
+
+SDLC
+
+Problem Statement
+
+1. Requirements Gathering
+2. Plan
+3. Design/Architecture
+4. Code / Implementation
+5. Testing / Quality Validations
+	Functional Testing
+	Performance Testing
+	Security Testing
+	User-Acceptance Testing
+6. Production Deployment
+7. Monitoring
+8. Maintenance/Support
+
+1970's
+
+
+Software Methodologies:
+
+1. Waterfall Model
+2. Agile Model
+3. DevOps --> SDLC Process Automation --> Automation
