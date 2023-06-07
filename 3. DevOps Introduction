@@ -31,3 +31,14 @@ Software Methodologies:
 1. Waterfall Model
 2. Agile Model
 3. DevOps --> SDLC Process Automation --> Automation
+
+
+Different activities involved when code is ready:
+1. Build the code --> compile the code, Package --> .jar, .war
+2. Deploy the code to test env
+3. Functional Testing
+4. Deploy the code to Performance env
+5. Performance Testing
+6. Security Testing
+7. UAT
+8. Deploy the Code to Production Env
