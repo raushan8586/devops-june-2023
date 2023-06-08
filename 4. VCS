@@ -1,0 +1,24 @@
+On-Prem Vs Cloud?
+
+Cloud Service Models --> IaaS, PaaS, SaaS
+
+linux vm --> ssh protocol  --> port 22
+windows vm --> rdp protocol  --> 3389
+
+Git and GitHub?
+
+Git --> Version Control System
+
+VCS
+1. Centralized VCS --> e.g. svn
+2. Distributed VCS --> e.g. git
+
+Why VCS?
+1. To track changes
+2. To retrieve from accidental deletes
+
+
+Drawbacks of cvcs (centralized)
+-----------------------------------
+1. Multiple developers cann't work on the same files at the same time
+2. To make changes, you need to be connected over the internet
