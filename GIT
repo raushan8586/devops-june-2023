@@ -1,0 +1,71 @@
+ls -l --> WD
+git ls-files --> Whether the files are being tracked or not - File location (SA/LR)
+git status --> To confirm whether the files are in SA or LR
+
+
+
+
+Commands:
+root@ip-172-31-43-101:~/devops-june-2023# history
+    1  apt update -y
+    2  clear
+    3  git version
+    4  git clone https://github.com/raushan8586/devops-repo-sample.git
+    5  ls -l
+    6  cd devops-repo-sample/
+    7  ls -l
+    8  clear
+    9  ls -l
+   10  cd ..
+   11  ls -l
+   12  mkdir devops-june-2023
+   13  ls -l
+   14  cd devops-repo-sample/
+   15  ls -la
+   16  cd ../devops-june-2023/
+   17  ls -la
+   18  git init
+   19  git branch
+   20  touch sample1.txt
+   21  vi sample1.txt
+   22  cat sample1.txt
+   23  ls -l
+   24  ls
+   25  pwd
+   26  ls -l
+   27  ls -la
+   28  git status
+   29  git add sample1.txt
+   30  git status
+   31  ls -l
+   32  git ls-files
+   33  git status
+   34  git commit -m "1st commit"
+   35  ls -l
+   36  git ls-files
+   37  git status
+   38  clear
+   39  ls -l
+   40  git status
+   41  git branch
+   42  git log
+   43  git show 0b66b38f0c838d3c7313f0b81db2deeaf86187eb
+   44  git log --oneline
+   45  touch sample2.txt
+   46  vi sample2.txt
+   47  git add .
+   48  ls -l
+   49  git ls-files
+   50  git status
+   51  git commit -m "2nd commit"
+   52  git log --oneline
+   53  ls -l
+   54  git ls-files
+   55  git status
+   56  git log --oneline
+   57  git show f891c0b
+   58  git remote -v
+   59  git remote add origin https://github.com/raushan8586/devops-june-repo.git
+   60  git remote -v
+   61  git push origin master
+   62  history
