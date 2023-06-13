@@ -69,3 +69,10 @@ root@ip-172-31-43-101:~/devops-june-2023# history
    60  git remote -v
    61  git push origin master
    62  history
+   
+   git config --list
+   34  git config --global user.name "raushan"
+   35  git config --list
+   36  git config --global user.email "raushan8586.kumar@gmail.com"
+   37  git config --list
+   38  vi sample4.txt
