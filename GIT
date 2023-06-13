@@ -81,3 +81,14 @@ root@ip-172-31-43-101:~/devops-june-2023# history
    56  git add sample3.txt
    57  git diff sample3.txt
    58  git diff --staged sample3.txt
+   
+   
+   git branch b1 master
+   68  git branch
+   69  git checkout b1
+   70  git branch
+   71  git log --oneline
+   72  git branch b2 master
+   73  git checkout b2
+   74  git log --oneline
+   75  history
