@@ -92,3 +92,76 @@ root@ip-172-31-43-101:~/devops-june-2023# history
    73  git checkout b2
    74  git log --oneline
    75  history
+   
+   
+   vi sample4.txt
+   80  git diff sample4.txt
+   81  git status
+   82  git restore sample4.txt
+   83  git status
+   84  vi sample4.txt
+   85  clear
+   86  git branch
+   87  git log --oneline
+   88  git checkout b1
+   89  git branch
+   90  git log --oneline
+   91  ls -l
+   92  vi b1_file1
+   93  git status
+   94  git add .
+   95  git commit -m "b1_1st_commit"
+   96  git log --oneline
+   97  git push origin b1
+   98  git branch c1 b1
+   99  git branch
+  100  git push origin c1
+  101  git checkout c1
+  102  git status
+  103  git log --oneline
+  104  git branch
+  105  git checkout b1
+  106  git checkout master
+  107  git merge b1 master
+  108  git log --oneline
+  109  git checkout b2
+  110  git branch
+  111  git log --oneline
+  112  git rebase master
+  113  git log --oneline
+  114  git log --graph --pretty=oneline
+  115  git checkout master
+  116  git branch
+  117  ls -l
+  118  vi sample5.txt
+  119  git add .
+  120* git commit -m "8th comm
+  121  git log --oneline
+  122  git checkout b2
+  123  vi b2_demo1
+  124  git add .
+  125  git commit -m "b2_1st_commit"
+  126  git log --oneline
+  127  git log --graph --pretty=oneline
+  128  git rebase master
+  129  git log --graph --pretty=oneline
+  130  git checkout master
+  131  git branch
+  132  vi test.txt
+  133  git add .
+  134  git commit -m "test-file-updated-master"
+  135  git checkout b2
+  136  vi test.txt
+  137  git add .
+  138  got commit -m "test-file-updated-b2"
+  139  git commit -m "test-file-updated-b2"
+  140  git log --oneline
+  141  git checkout master
+  142  git merge b2 master
+  143  vi test.txt
+  144  git status
+  145  git add .
+  146  git status
+  147  git commit -m "test-file-updated-master-b2"
+  148  git status
+  149  git log --graph --pretty=oneline
