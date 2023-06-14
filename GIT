@@ -2,7 +2,8 @@ ls -l --> WD
 git ls-files --> Whether the files are being tracked or not - File location (SA/LR)
 git status --> To confirm whether the files are in SA or LR
 
-
+Before you "git push" changes to a branch, first perform "git pull"
+Before you "git merge", "git rebase" first
 
 
 Commands:
