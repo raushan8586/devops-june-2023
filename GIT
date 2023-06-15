@@ -223,3 +223,16 @@ cd devops-june-repo/
   205  git log --oneline
   206  git status
   207  history
+
+ 210  vi sample1.txt
+  211  vi sample2.txt
+  212  vi sample1.txt
+  213  vi sample2.txt
+  214  git status
+  215  git stash list
+  216  git stash
+  217  git status
+  218  git stash list
+  219  git show stash@{0}
+  220  ls -l
+  221  history
