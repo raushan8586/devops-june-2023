@@ -166,3 +166,60 @@ root@ip-172-31-43-101:~/devops-june-2023# history
   147  git commit -m "test-file-updated-master-b2"
   148  git status
   149  git log --graph --pretty=oneline
+
+
+cd devops-june-repo/
+  154  ls -l
+  155  vi ReadMe1st
+  156  vi app.log
+  157  git status
+  158  touch .gitignore
+  159  vi .gitignore
+  160  git status
+  161  git add .
+  162  git commit -m "gitIgnore added"
+  163  git status
+  164  vi .gitignore
+  165  cat .gitignore
+  166  git log --oneline
+  167  ls -l
+  168  git branch
+  169  vi sample6.txt
+  170  git add .
+  171  git commit -m "9th commit"
+  172  git log --oneline
+  173  git show c0da8f3
+  174  ls -l
+  175  clear
+  176  git log --oneline
+  177  git revert c0da8f3
+  178  git log --oneline
+  179  ls -l
+  180  git show 6e5b16b
+  181  ls -l
+  182  rm sample5.txt
+  183  ls -l
+  184  git ls-files
+  185  git status
+  186  git restore sample5.txt
+  187  ls -l
+  188  git status
+  189  git rm sample5.txt
+  190  ls -l
+  191  git ls-files
+  192  git status
+  193  git restore --staged sample5.txt
+  194  ls -l
+  195  git ls-files
+  196  git status
+  197  git restore sample5.txt
+  198  git status
+  199  ls -l
+  200  git ls-files
+  201  history
+  202  clear
+  203  git log --oneline
+  204  git reset --hard aac2a61
+  205  git log --oneline
+  206  git status
+  207  history
