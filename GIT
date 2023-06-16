@@ -236,3 +236,23 @@ cd devops-june-repo/
   219  git show stash@{0}
   220  ls -l
   221  history
+
+ 225  git stash list
+  226  ls -l
+  227  git show stash@{0}
+  228  git stash pop stash@{0}
+  229  git status
+  230  git stash list
+  231  git stash -p
+  232  git status
+  233  git stash list
+  234  git show stash@{0}
+  235  git stash clear
+  236  git stash list
+  237  git status list
+  238  git status
+  239  vi sample2.txt
+  240  git add .
+  241  git commit -m "10 commit"
+  242  git log --oneline
+  243  history
