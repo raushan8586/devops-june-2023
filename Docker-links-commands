@@ -1,0 +1,7 @@
+https://hub.docker.com/
+
+docker version
+  246  apt install docker.io -y
+  247  clear
+  248  docker version
+  249  history
