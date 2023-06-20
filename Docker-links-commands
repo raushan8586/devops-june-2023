@@ -12,3 +12,35 @@ docker version
   247  clear
   248  docker version
   249  history
+
+
+Install apache2 on the ubuntu VM
+ apt update -y
+  277  apt install -y apache2
+  279  systemctl status apache2
+  281  systemctl enable apache2
+
+
+Deploy httpd (docker image) as a container
+
+  282  docker version
+  283  docker info
+  284  clear
+  285  docker images
+  286  docker pull httpd
+  287  docker images
+  288  docker ps
+  289  docker ps -a
+  290  docker container ls
+  291  docker container ls -a
+  292  docker inspect ad303d7f80f9
+  293  docker images
+  294  docker ps
+  295  clear
+  296  docker images
+  298  lsof -i -P -n | grep LISTEN
+  299  docker run -itd -p 82:80 httpd
+  302  docker ps
+  303  clear
+  304  docker ps
+  305  history
