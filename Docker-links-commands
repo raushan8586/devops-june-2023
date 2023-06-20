@@ -6,7 +6,7 @@ https://docs.docker.com/engine/reference/run/
 
 
 sudo su -
-
+apt update -y
 docker version
   246  apt install docker.io -y
   247  clear
