@@ -44,3 +44,9 @@ Deploy httpd (docker image) as a container
   303  clear
   304  docker ps
   305  history
+
+docker exec -it e4cc030f3b47 /bin/bash
+
+/usr/local/apache2/htdocs --> index.html
+
+
