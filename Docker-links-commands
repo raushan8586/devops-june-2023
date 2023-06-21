@@ -53,5 +53,21 @@ Execute on the container -->
 apt update -y
    14  apt install -y vim
    15  vi index.html
+   
+   On the VM -->
+   docker run -itd fedora
+  323  docker ps
+  324  docker stats
+  325  docker ps
+  326  docker stats
+  327  docker ps
+  328  docker exec -it c6c42371bef0 /bin/bash
+  329  docker stats
+  330  docker exec -it c6c42371bef0 /bin/bash
+  331  docker ps
+  332  docker images
+  333  docker commit c6c42371bef0 httpd_new
+  334  docker images
+  335  history
 
 
