@@ -72,4 +72,25 @@ apt update -y
   334  docker images
   335  history
 
+Dockerfile -->
+
+ mkdir my-images
+  339  cd my-images/
+  340  touch Dockerfile
+  341  vi Dockerfile
+  342  cat Dockerfile
+  343  vi Dockerfile
+  344  cat Dockerfile
+  345  vi index1.html
+  346  vi index2.html
+  347  ls -l
+  348  docker build . -t httpd1
+  349  docker images
+  350  docker ps
+  351  docker run -itd -p 83:80 httpd1
+  352  docker ps
+  353  ls -l
+  354  cat Dockerfile
+  355  history
+
 
