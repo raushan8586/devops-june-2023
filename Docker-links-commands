@@ -49,4 +49,9 @@ docker exec -it e4cc030f3b47 /bin/bash
 
 /usr/local/apache2/htdocs --> index.html
 
+Execute on the container -->
+apt update -y
+   14  apt install -y vim
+   15  vi index.html
+
 
