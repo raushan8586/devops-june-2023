@@ -4,6 +4,8 @@ https://docs.docker.com/
 Docker Commands
 https://docs.docker.com/engine/reference/run/
 
+Dockerfile Link: https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
+
 
 sudo su -
 apt update -y
