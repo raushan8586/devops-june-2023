@@ -116,4 +116,11 @@ docker volume ls
   405  docker ps
   406  history
 
+Create an account in hub.docker.com. Create a repository
+
+docker login
+  411  docker images
+  412  docker image tag ubuntu1:latest raushan8586/devops-june:latest
+  413  docker image push raushan8586/devops-june:latest
+
 
