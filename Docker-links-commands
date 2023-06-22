@@ -94,3 +94,25 @@ Dockerfile -->
   355  history
 
 
+Docker Volumes-->
+
+docker volume ls
+  390  docker run -itd --mount source=intellipaat-volume,target=/usr/local/apache2/htdocs -p 82:80 httpd
+  391  docker ps
+  392  docker exec -it 8361bdebacfa /bin/bash
+  393  find / -name intellipaat-volume
+  394  cd /var/lib/docker/volumes/intellipaat-volume
+  395  ls -l
+  396  cd _data
+  397  ls -l
+  398  cat index1.html
+  399  cp index1.html index2.html
+  400  vi index2.html
+  401  ls -l
+  402  cp index.html index3.html
+  403  vi index3.html
+  404  docker run -itd --mount source=intellipaat-volume,target=/usr/local/apache2/htdocs -p 83:80 httpd
+  405  docker ps
+  406  history
+
+
