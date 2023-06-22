@@ -96,6 +96,7 @@ Dockerfile -->
 
 Docker Volumes-->
 
+docker volume create intellipaat-volume
 docker volume ls
   390  docker run -itd --mount source=intellipaat-volume,target=/usr/local/apache2/htdocs -p 82:80 httpd
   391  docker ps
