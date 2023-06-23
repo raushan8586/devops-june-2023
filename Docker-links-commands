@@ -5,6 +5,7 @@ Docker Commands
 https://docs.docker.com/engine/reference/run/
 
 Dockerfile Link: https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
+https://docs.docker.com/network/drivers/
 
 
 sudo su -
@@ -122,5 +123,17 @@ docker login
   411  docker images
   412  docker image tag ubuntu1:latest raushan8586/devops-june:latest
   413  docker image push raushan8586/devops-june:latest
+
+
+Docker Network
+https://www.ipaddressguide.com/cidr
+
+docker network ls
+  419  docker run -itd -p 82:80 httpd1
+  420  docker ps
+  421  docker inspect e25fe3bcd33f
+  422  docker network ls
+  423  docker inspect b87a727a36c0
+
 
 
