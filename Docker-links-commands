@@ -6,6 +6,7 @@ https://docs.docker.com/engine/reference/run/
 
 Dockerfile Link: https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
 https://docs.docker.com/network/drivers/
+https://docs.docker.com/compose/samples-for-compose/
 
 
 sudo su -
@@ -133,6 +134,24 @@ docker network ls
   420  docker ps
   421  docker inspect e25fe3bcd33f
   422  docker network ls
+
+
+Docker compose
+docker-compose version
+  433  apt install docker-compose -y
+  434  clear
+  435  docker-compose version
+  436  docker ps
+  437  docker rm -f e25fe3bcd33f
+  438  docker ps
+  439  ls -l
+  440  docker-compose up -d
+  441  docker ps
+  442  docker network ls
+  443  docker volume ls
+  444  docker exec -it 5475397e2d8c /bin/bash
+
+mysql -u wordpress -p wordpress
   423  docker inspect b87a727a36c0
 
 
