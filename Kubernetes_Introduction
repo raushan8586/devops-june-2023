@@ -1,0 +1,13 @@
+Docker --> Container Engine --> Deploy the microservices on the Containers
+
+ 
+1. auto-scaling of containers
+2. auto-healing of containers
+3. auto-load balancing of incoming requests across available containers
+4. auto-deployment (without downtime)
+5. auto-scheduling/clustering
+
+
+Container Orchestration Engine --> Kubernetes
+
+Docker Inc. --> Docker Swarm
