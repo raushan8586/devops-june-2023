@@ -20,3 +20,40 @@ curl -sL "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_c
 tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
 
 sudo mv /tmp/eksctl /usr/local/bin
+
+
+1  aws --version
+    2  lscpu
+    3  free -h
+    4  exit
+    5  aws version
+    6  aws --version
+    7  kubectl version
+    8  kubectl version --short
+    9  eksctl version
+   10  uname -a
+   11  uname -m
+   12  # for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+   13  ARCH=amd64
+   14  PLATFORM=$(uname -s)_$ARCH
+   15  curl -sLO "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+   16  # (Optional) Verify checksum
+   17  curl -sL "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+   18  tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+   19  sudo mv /tmp/eksctl /usr/local/bin
+   20  eksctl version
+   21  clear
+   22  eksctl create cluster
+   23  eksctl get cluster
+   24  kubectl get nodes
+   25  clear
+   26  kubectl get nodes
+   27  kubectl get ns
+   28  kubectl get all
+   29  kubectl get all -n kube-node-lease
+   30  kubectl get all -n kube-public
+   31  kubectl get all -n kube-system
+   32  history
+
+Delete the cluster
+eksctl delete cluster --name=<name>
