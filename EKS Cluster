@@ -57,3 +57,28 @@ sudo mv /tmp/eksctl /usr/local/bin
 
 Delete the cluster
 eksctl delete cluster --name=<name>
+
+
+29th June -->
+18  eksctl create cluster --name=eksdemo1 --without-nodegroup
+   19  eksctl get cluster
+   20  eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster eksdemo1 --approve
+   21  eksctl create nodegroup --cluster=eksdemo1 --name=ng-demo --node-type=m5.large --nodes=2 --nodes-min=2 --nodes-max=4 --node-volume-size=20 --ssh-access --ssh-public-key=devops-june-2023 --managed --asg-access --external-dns-access --full-ecr-access --appmesh-access --alb-ingress-access
+   22  kubectl get nodes
+   23  ls -l
+   24  cat loadbalancer-service.yaml 
+   25  kubectl get all
+   26  kubectl get ns
+   27  ls -l
+   28  kubectl create -f loadbalancer-service.yaml 
+   29  clear
+   30  kubectl get all
+   31  kubectl describe pod frontend-deployment-654476994c-gt68k
+   32  kubectl get all
+   33  clear
+   34  kubectk get pods
+   35  kubectl get pods
+   36  kubectl get rs
+   37  kubectl get nodes
+   38  kubectl get pods -o wide
+   39  history
