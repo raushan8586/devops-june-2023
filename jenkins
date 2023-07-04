@@ -4,8 +4,6 @@ https://www.jenkins.io/doc/book/installing/linux/
 
 
 
-
-
 root@ip-172-31-10-22:~# history
     1  apt update -y
     2  sudo apt install openjdk-11-jre -y
@@ -18,3 +16,16 @@ root@ip-172-31-10-22:~# history
     9  lsof -i -P -n | grep LISTEN
    10  cat /var/lib/jenkins/secrets/initialAdminPassword
    11  history
+
+
+
+Slave nodes
+Manage Jenkins --> Nodes and Clouds --> Add New Node
+--> home directory --> /home/ubuntu
+
+Manage Jenkins --> Security --> Agents -- select random
+open ports in Security Group --> ALL TCP
+
+To connect jenkins with slave nodes, execute following commands:
+curl -sO http://jenkins-server-ip:port/jnlpJars/agent.jar
+java -jar agent.jar -jnlpUrl http://jenkins-server-ip:port/computer/TestServer/jenkins-agent.jnlp -secret 3c0d4849ef99ba989f54e942d9942b21b9a6085aa8d9ed708a270b246f5092c6 -workDir "/home/ubuntu"
