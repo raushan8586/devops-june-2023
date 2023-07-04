@@ -39,3 +39,7 @@ Docker-Job
 sudo docker rm -f $(sudo docker ps -a -q)
 sudo docker build /home/ubuntu/workspace/job2/ -t httpd1
 sudo docker run -itd -p 82:80 httpd1
+
+
+visudo
+jenkins ALL=(ALL) NOPASSWD: ALL    --> Add this line to sudoers
