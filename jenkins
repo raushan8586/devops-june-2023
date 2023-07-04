@@ -29,3 +29,13 @@ open ports in Security Group --> ALL TCP
 To connect jenkins with slave nodes, execute following commands:
 curl -sO http://jenkins-server-ip:port/jnlpJars/agent.jar
 java -jar agent.jar -jnlpUrl http://jenkins-server-ip:port/computer/TestServer/jenkins-agent.jnlp -secret 3c0d4849ef99ba989f54e942d9942b21b9a6085aa8d9ed708a270b246f5092c6 -workDir "/home/ubuntu"
+
+Install Docker on slave node and deploy a container --> docker run -itd -p 82:80 httpd
+
+Dockerfile
+https://github.com/raushan8586/pipeline1.git
+
+Docker-Job
+sudo docker rm -f $(sudo docker ps -a -q)
+sudo docker build /home/ubuntu/workspace/job2/ -t httpd1
+sudo docker run -itd -p 82:80 httpd1
