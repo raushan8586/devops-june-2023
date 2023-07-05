@@ -41,6 +41,8 @@ sudo docker build /home/ubuntu/workspace/job2/ -t httpd1
 sudo docker run -itd -p 82:80 httpd1
 
 
+If you need to run commands/scripts as root user-->
+
 visudo
 jenkins ALL=(ALL) NOPASSWD: ALL    --> Add this line to sudoers
 
