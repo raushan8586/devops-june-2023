@@ -30,3 +30,9 @@ Goals
 build package
 clean package
 
+
+install maven
+https://www.digitalocean.com/community/tutorials/install-maven-linux-ubuntu
+
+maven project
+https://github.com/jenkins-docs/simple-java-maven-app/tree/master
