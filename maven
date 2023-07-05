@@ -12,3 +12,21 @@ https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
 MVN Repository
 https://mvnrepository.com/
 
+
+Install maven plugin in Jenkins
+
+Install Maven
+apt install maven -y
+
+mvn --version
+
+Manage Jenkins --> Tools
+
+https://github.com/raushan8586/MyLab.git
+
+Create a maven project
+
+Goals
+build package
+clean package
+
