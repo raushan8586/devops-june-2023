@@ -15,8 +15,19 @@ https://mvnrepository.com/
 
 Install maven plugin in Jenkins
 
-Install Maven
+Install Maven --> 3.6.x version
 apt install maven -y
+
+install maven --> 3.9.3
+https://maven.apache.org/download.cgi
+https://dlcdn.apache.org/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.tar.gz
+
+wget https://dlcdn.apache.org/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.tar.gz
+tar -xvf apache-maven-3.9.3-bin.tar.gz
+mv apache-maven-3.9.3-bin maven
+mv ma
+
+https://www.digitalocean.com/community/tutorials/install-maven-linux-ubuntu
 
 mvn --version
 
@@ -32,9 +43,6 @@ Goals
 build package
 clean package
 
-
-install maven
-https://www.digitalocean.com/community/tutorials/install-maven-linux-ubuntu
 
 maven project
 https://github.com/jenkins-docs/simple-java-maven-app/tree/master
