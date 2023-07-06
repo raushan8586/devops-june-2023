@@ -15,8 +15,10 @@ https://mvnrepository.com/
 
 Install maven plugin in Jenkins
 
-Install Maven --> 3.6.x version
+Install Maven --> 3.6.x version 
 apt install maven -y
+
+--> Better to install a higher version using below commands
 
 install maven --> 3.9.3
 https://maven.apache.org/download.cgi
@@ -38,8 +40,8 @@ https://dlcdn.apache.org/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.tar
 Manage Jenkins --> Tools
 
 
-https://github.com/raushan8586/simple-java-maven-app
-https://github.com/raushan8586/MyLab.git
+https://github.com/jenkins-docs/simple-java-maven-app.git
+https://github.com/raushan8586/MyLab.git --> Do not use this for Maven Project
 
 Create a maven project
 
