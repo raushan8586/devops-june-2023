@@ -22,14 +22,18 @@ install maven --> 3.9.3
 https://maven.apache.org/download.cgi
 https://dlcdn.apache.org/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.tar.gz
 
-wget https://dlcdn.apache.org/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.tar.gz
-tar -xvf apache-maven-3.9.3-bin.tar.gz
-mv apache-maven-3.9.3-bin maven
-mv ma
+   50  cd /
+   51  wget https://dlcdn.apache.org/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.tar.gz
+   52  tar -xvf apache-maven-3.9.3-bin.tar.gz
+   53  ls -l
+   54  mv apache-maven-3.9.3 maven
+   55  ls -l
+   56  pwd
+   57  M2_HOME='/maven'
+   58  PATH="$M2_HOME/bin:$PATH"
+   59  export PATH
+   60  mvn -version
 
-https://www.digitalocean.com/community/tutorials/install-maven-linux-ubuntu
-
-mvn --version
 
 Manage Jenkins --> Tools
 
