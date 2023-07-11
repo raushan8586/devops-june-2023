@@ -1,0 +1,9 @@
+root@ip-172-31-0-46:~# history
+    1  apt update -y
+   6  python3 --version
+
+Install Ansible
+    2  sudo apt install software-properties-common
+    3  sudo add-apt-repository --yes --update ppa:ansible/ansible
+    4  sudo apt install ansible -y
+    9  ansible --version
