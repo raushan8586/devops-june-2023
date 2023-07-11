@@ -1,3 +1,6 @@
+Installation:
+https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu
+
 root@ip-172-31-0-46:~# history
     1  apt update -y
    6  python3 --version
