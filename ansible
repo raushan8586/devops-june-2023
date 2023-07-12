@@ -1,7 +1,19 @@
 https://docs.ansible.com/
+https://docs.ansible.com/ansible/2.8/user_guide/index.html
 
 Installation:
 https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu
+
+Ansible Adhoc Commands:
+https://docs.ansible.com/ansible/2.8/user_guide/intro_adhoc.html
+https://www.middlewareinventory.com/blog/ansible-ad-hoc-commands/
+
+Ansible playbooks example:
+https://www.middlewareinventory.com/blog/ansible-playbook-example/
+
+Ansible Roles:
+
+
 
 root@ip-172-31-0-46:~# history
     1  apt update -y
