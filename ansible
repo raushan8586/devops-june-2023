@@ -12,6 +12,12 @@ Ansible playbooks example:
 https://www.middlewareinventory.com/blog/ansible-playbook-example/
 
 Ansible Roles:
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html
+
+
+https://github.com/raushan8586/ansible.git 
+
+--> Refer this for Roles sample example and links for handlers, notify, variables, template, running shell and python scripts in remote hosts
 
 
 
