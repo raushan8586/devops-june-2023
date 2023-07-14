@@ -16,3 +16,9 @@ https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
 
 
 --> open port 3000 in SG
+
+Import this dashboard
+https://grafana.com/grafana/dashboards/1860-node-exporter-full/
+import 1860
+
+https://grafana.com/grafana/dashboards/15172-node-exporter-for-prometheus-dashboard-based-on-11074/
