@@ -42,3 +42,25 @@ https://prometheus.io/docs/guides/node-exporter/
    38  sudo systemctl status prometheus
    39  sudo ufw allow 9090/tcp
    40  history
+
+
+Node-Exporter
+43  wget https://github.com/prometheus/node_exporter/releases/download/v1.6.0/node_exporter-1.6.0.linux-amd64.tar.gz
+   44  ls -l
+   45  tar xvfz node_exporter-*.*-amd64.tar.gz
+   46  ls -l
+   47  cd node_exporter-*.*-amd64
+   48  ls -l
+   49  nohup ./node_exporter &
+   50  lsof -i -P -n | grep LISTEN
+   51  history
+   52  cd /etc/prometheus/
+   53  ls -l
+   54  vi prometheus.yml
+
+--> Edit the prometheus.yml node-exporter target
+
+   55  sudo systemctl daemon-reload
+   56  sudo systemctl restart prometheus
+   57  sudo systemctl status prometheus
+   58  history
