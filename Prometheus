@@ -58,7 +58,7 @@ Node-Exporter
    53  ls -l
    54  vi prometheus.yml
 
---> Edit the prometheus.yml node-exporter target
+--> Edit the prometheus.yml node-exporter target. Refer prometheus_node-exporter.png
 
    55  sudo systemctl daemon-reload
    56  sudo systemctl restart prometheus
