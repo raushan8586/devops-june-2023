@@ -21,3 +21,5 @@ Monitoring tool is required:
 1. Prometheus / Grafana --> Kubernetes
 2. ELK (Elasticsearch, Logstash, Kibana)
 
+Alerting --> monitor 24 * 7
+
