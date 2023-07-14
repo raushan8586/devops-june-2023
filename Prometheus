@@ -1,4 +1,15 @@
+Architecture:
+https://prometheus.io/docs/introduction/overview/
+
+Installation all the Prometheus components:
+https://prometheus.io/download/#prometheus
+
+Install Prometheus:
 https://www.cherryservers.com/blog/install-prometheus-ubuntu
+
+Install Node Exporter:
+https://prometheus.io/docs/guides/node-exporter/
+
 
 1  apt update -y
     2  clear
