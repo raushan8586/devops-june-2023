@@ -35,4 +35,12 @@ GitHub Actions:
 8. Monitoring:
   --> setup
 
+9. Database
+  Relational DB --> MySQL
+  Non-Relational DB --> MongoDB
+
+10. Applications Servers
+  Tomcat
+  weblogic
+
 
