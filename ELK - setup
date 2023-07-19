@@ -1,0 +1,21 @@
+Elasticsearch -->
+
+
+Kibana --> 
+
+
+Elastic Agent -->
+
+1  curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.8.2-linux-x86_64.tar.gz
+    2  ls -l
+    3  tar xzvf elastic-agent-8.8.2-linux-x86_64.tar.gz
+    4  ls -l
+    5  cd elastic-agent-8.8.2-linux-x86_64/
+    6  ls -l
+    7  vi elastic-agent.yml
+    8  clear
+    9  ls -l
+   10  mv elastic-agent.yml elastic-agent.yml-bkp
+   11  vi elastic-agent.yml
+   12  sudo ./elastic-agent install
+   13  history
