@@ -1,6 +1,8 @@
 https://aws.amazon.com/blogs/opensource/kubernetes-ingress-aws-alb-ingress-controller/
 https://kubernetes.io/docs/concepts/services-networking/ingress/
 
+Nginx Ingress Controller --> https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-3-nginx-ingress-controller/
+
 
 
 load balancer --> dns -- url --> abc1234.com
