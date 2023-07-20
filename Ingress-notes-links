@@ -1,0 +1,22 @@
+https://aws.amazon.com/blogs/opensource/kubernetes-ingress-aws-alb-ingress-controller/
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+
+
+load balancer --> dns -- url --> abc1234.com
+
+abc1234.com/path1  --> microservices1 --> container_name1 --> LB1
+abc1234.com/path2  --> microservices2 --> container_name2 --> LB2
+abc1234.com/path3  --> microservices3 --> container_name3 --> LB3
+
+url/path-based routing --> Ingress
+
+Ingress
+1. Ingress-controller --> AWS ALB, Nginx, Traefik,HA Proxy
+--> monitors ingress resources
+--> creates necessary AWS resource for Ingress
+	For e.g. such as ALG for ALB Ingress Controller
+--> One cluster can have more than 1 ingress controller
+
+2. Ingress Resource
+--> selects which ingress controlle to use
