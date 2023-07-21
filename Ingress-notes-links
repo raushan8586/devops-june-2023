@@ -1,6 +1,8 @@
 https://aws.amazon.com/blogs/opensource/kubernetes-ingress-aws-alb-ingress-controller/
 
-https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.5/deploy/installation/  --> latest one
+https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.5/examples/echo_server/ --> Latest
+
+https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.5/deploy/installation/  --> latest aws alb ingress controller
 
 https://kubernetes.io/docs/concepts/services-networking/ingress/
 
