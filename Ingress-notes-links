@@ -7,6 +7,7 @@ https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.5/deploy/insta
 https://kubernetes.io/docs/concepts/services-networking/ingress/
 
 Nginx Ingress Controller --> https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-3-nginx-ingress-controller/
+                         --> https://platform9.com/learn/v1.0/tutorials/nginix-controller-via-yaml
 
 
 
