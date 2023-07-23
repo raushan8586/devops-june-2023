@@ -41,7 +41,7 @@ Elastic Agent -->
     8  clear
     9  ls -l
 
---> Downloaded the eladtic.agent.yml
+--> Downloaded the elastic.agent.yml
 
    10  mv elastic-agent.yml elastic-agent.yml-bkp
    11  vi elastic-agent.yml  --> Edit from the downloaded one
