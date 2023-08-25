@@ -27,6 +27,7 @@ Kibana -->
    13  ./kibana
 
 --> edit kibana.yml and change the hostname with Private IP --> server.host: "172.31.3.38"
+--> use the public ip in the browser though
 
 
 Elastic Agent -->
