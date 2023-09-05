@@ -1,0 +1,113 @@
+3 Command lines:
+
+1. EKSCTL --> eksctl version, eksctl - The official CLI for Amazon EKS
+https://eksctl.io/
+
+2. KUBECTL --> kubectl version
+3. AWS CLI --> aws --version
+
+
+Imp Links:
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+https://codefresh.io/learn/software-deployment/top-6-kubernetes-deployment-strategies-and-how-to-choose/
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+
+
+
+EKSCTL
+# for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+ARCH=amd64
+PLATFORM=$(uname -s)_$ARCH
+
+curl -sLO "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+
+# (Optional) Verify checksum
+curl -sL "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+
+tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+
+sudo mv /tmp/eksctl /usr/local/bin
+
+
+1  aws --version
+    2  lscpu
+    3  free -h
+    4  exit
+    5  aws version
+    6  aws --version
+    7  kubectl version
+    8  kubectl version --short
+    9  eksctl version
+   10  uname -a
+   11  uname -m
+   12  # for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+   13  ARCH=amd64
+   14  PLATFORM=$(uname -s)_$ARCH
+   15  curl -sLO "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+   16  # (Optional) Verify checksum
+   17  curl -sL "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+   18  tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+   19  sudo mv /tmp/eksctl /usr/local/bin
+   20  eksctl version
+   21  clear
+   22  eksctl create cluster
+   23  eksctl get cluster
+   24  kubectl get nodes
+   25  clear
+   26  kubectl get nodes
+   27  kubectl get ns
+   28  kubectl get all
+   29  kubectl get all -n kube-node-lease
+   30  kubectl get all -n kube-public
+   31  kubectl get all -n kube-system
+   32  history
+
+Delete the cluster
+eksctl delete cluster --name=<name>
+
+
+29th June -->
+18  eksctl create cluster --name=eksdemo1 --without-nodegroup
+   19  eksctl get cluster
+   20  eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster eksdemo1 --approve
+   21  eksctl create nodegroup --cluster=eksdemo1 --name=ng-demo --node-type=m5.large --nodes=2 --nodes-min=2 --nodes-max=4 --node-volume-size=20 --ssh-access --ssh-public-key=devops-june-2023 --managed --asg-access --external-dns-access --full-ecr-access --appmesh-access --alb-ingress-access
+   22  kubectl get nodes
+   23  ls -l
+   24  cat loadbalancer-service.yaml 
+   25  kubectl get all
+   26  kubectl get ns
+   27  ls -l
+   28  kubectl create -f loadbalancer-service.yaml 
+   29  clear
+   30  kubectl get all
+   31  kubectl describe pod frontend-deployment-654476994c-gt68k
+   32  kubectl get all
+   33  clear
+   34  kubectk get pods
+   35  kubectl get pods
+   36  kubectl get rs
+   37  kubectl get nodes
+   38  kubectl get pods -o wide
+   39  history
+kubectl delete pod frontend-deployment-654476994c-gt68k
+   43  kubectl get po -o wide
+   44  clear
+   45  kubectl get all
+   46  kubectl scale deployment frontend-deployment --replicas=4
+   47  kubectl get all
+   48  kubectl get po -o wide
+   49  kubectl scale deployment frontend-deployment --replicas=2
+   50  kubectl describe frontend-deployment
+   51  kubectl describe deployment frontend-deployment
+   52  cat loadbalancer-service.yaml 
+   53  kubectl get all
+   54  kubectl delete -f loadbalancer-service.yaml 
+   55  kubectl get all
+   56  eksctl get ncluster
+   57  clear
+   58  eksctl get cluster
+   59  eksctl get nodegroup --cluster=eksdemo1
+   60  eksctl delete nodegroup --cluster=eksdemo1 --name=ng-demo
+
+eksctl delete cluster eksdemo1
+

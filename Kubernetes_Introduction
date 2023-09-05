@@ -1,0 +1,21 @@
+Docker --> Container Engine --> Deploy the microservices on the Containers
+
+ 
+1. auto-scaling of containers
+2. auto-healing of containers
+3. auto-load balancing of incoming requests across available containers
+4. auto-deployment (without downtime)
+5. auto-scheduling/clustering
+
+
+Container Orchestration Engine --> Kubernetes
+
+Docker Inc. --> Docker Swarm
+
+
+Kubernetes Objects
+-------------------
+1. Pods --> have the containers (99% --> 1 container - 1 pod)
+2. Replica Set --> maintains a stable no. of replica pods
+3. Deployment --> deployment activities without downtime
+4. Services --> exposing the pods, loadbalancing across nodes

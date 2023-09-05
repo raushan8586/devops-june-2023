@@ -1,0 +1,11 @@
+AWS Cloudshell
+
+83  cd project1/
+   84  curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+   85  ls -l
+   86  chmod 700 get_helm.sh 
+   87  ./get_helm.sh 
+   88  sudo yum install openssl -y
+   89  ./get_helm.sh 
+   90  helm version
+   91  history

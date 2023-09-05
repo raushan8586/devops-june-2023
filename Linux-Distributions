@@ -1,0 +1,4 @@
+Linux distributions
+
+Debian --> ubuntu --> apt update, apt install
+CentOS --> Redhat, Fedora, Amazon Linux 2 --> yum --> yum update, yum install

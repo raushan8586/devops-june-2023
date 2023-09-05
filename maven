@@ -1,0 +1,57 @@
+https://maven.apache.org/
+
+https://jenkov.com/tutorials/maven/maven-tutorial.html
+
+Get started wth Maven-->
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+
+
+Maven Build lifecycle
+https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
+MVN Repository
+https://mvnrepository.com/
+
+
+Install maven plugin in Jenkins
+
+Install Maven --> 3.6.x version 
+apt install maven -y
+
+--> Better to install a higher version using below commands
+
+install maven --> 3.9.3
+https://maven.apache.org/download.cgi
+https://dlcdn.apache.org/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.tar.gz
+
+   50  cd /
+   51  wget https://dlcdn.apache.org/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.tar.gz
+   52  tar -xvf apache-maven-3.9.3-bin.tar.gz
+   53  ls -l
+   54  mv apache-maven-3.9.3 maven
+   55  ls -l
+   56  pwd
+   57  M2_HOME='/maven'
+   58  PATH="$M2_HOME/bin:$PATH"
+   59  export PATH
+   60  mvn -version
+
+
+Manage Jenkins --> Tools
+
+
+https://github.com/jenkins-docs/simple-java-maven-app.git
+https://github.com/raushan8586/MyLab.git --> Do not use this for Maven Project
+
+Create a maven project
+
+Goals
+build package
+clean package
+
+
+maven project
+https://github.com/jenkins-docs/simple-java-maven-app/tree/master
+
+
+

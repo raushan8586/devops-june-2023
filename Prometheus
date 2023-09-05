@@ -1,0 +1,66 @@
+Architecture:
+https://prometheus.io/docs/introduction/overview/
+
+Installation all the Prometheus components:
+https://prometheus.io/download/#prometheus
+
+Install Prometheus:
+https://www.cherryservers.com/blog/install-prometheus-ubuntu
+
+Install Node Exporter:
+https://prometheus.io/docs/guides/node-exporter/
+
+
+1  apt update -y
+    2  clear
+    3  sudo groupadd --system prometheus
+    4  sudo useradd -s /sbin/nologin --system -g prometheus prometheus
+    5  sudo mkdir /etc/prometheus
+    6  sudo mkdir /var/lib/prometheus
+    7  wget https://github.com/prometheus/prometheus/releases/download/v2.45.0/prometheus-2.45.0.linux-amd64.tar.gz
+    8  ls -l
+    9  tar xvf prometheus-2.45.0.linux-amd64.tar.gz
+   10  ls -l
+   11  cd prometheus-2.45.0.linux-amd64/
+   12  sudo mv prometheus /usr/local/bin
+   13  sudo mv promtool /usr/local/bin
+   14  sudo chown prometheus:prometheus /usr/local/bin/prometheus
+   15  sudo chown prometheus:prometheus /usr/local/bin/promtool
+   16  sudo mv consoles /etc/prometheus
+   17  sudo mv console_libraries /etc/prometheus
+   18  sudo mv prometheus.yml /etc/prometheus
+   28  sudo chown prometheus:prometheus /etc/prometheus
+   29  sudo chown -R prometheus:prometheus /etc/prometheus/consoles
+   30  sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
+   31  sudo chown -R prometheus:prometheus /var/lib/prometheus
+   32  vi /etc/prometheus/prometheus.yml
+   33  sudo nano /etc/systemd/system/prometheus.service
+   34  vi /etc/systemd/system/prometheus.service
+   35  sudo systemctl daemon-reload
+   36  sudo systemctl enable prometheus
+   37  sudo systemctl start prometheus
+   38  sudo systemctl status prometheus
+   39  sudo ufw allow 9090/tcp
+   40  history
+
+
+Node-Exporter
+43  wget https://github.com/prometheus/node_exporter/releases/download/v1.6.0/node_exporter-1.6.0.linux-amd64.tar.gz
+   44  ls -l
+   45  tar xvfz node_exporter-*.*-amd64.tar.gz
+   46  ls -l
+   47  cd node_exporter-*.*-amd64
+   48  ls -l
+   49  nohup ./node_exporter &
+   50  lsof -i -P -n | grep LISTEN
+   51  history
+   52  cd /etc/prometheus/
+   53  ls -l
+   54  vi prometheus.yml
+
+--> Edit the prometheus.yml node-exporter target. Refer prometheus_node-exporter.png
+
+   55  sudo systemctl daemon-reload
+   56  sudo systemctl restart prometheus
+   57  sudo systemctl status prometheus
+   58  history

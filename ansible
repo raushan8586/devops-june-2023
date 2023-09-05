@@ -1,0 +1,57 @@
+https://docs.ansible.com/
+https://docs.ansible.com/ansible/2.8/user_guide/index.html
+
+Installation:
+https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu
+
+Ansible Adhoc Commands:
+https://docs.ansible.com/ansible/2.8/user_guide/intro_adhoc.html
+https://www.middlewareinventory.com/blog/ansible-ad-hoc-commands/
+
+Ansible playbooks example:
+https://www.middlewareinventory.com/blog/ansible-playbook-example/
+
+Ansible Roles:
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html
+
+
+https://github.com/raushan8586/ansible.git 
+
+--> Refer this for Roles sample example and links for handlers, notify, variables, template, running shell and python scripts in remote hosts
+
+
+
+root@ip-172-31-0-46:~# history
+    1  apt update -y
+   6  python3 --version
+
+Install Ansible
+    2  sudo apt install software-properties-common
+    3  sudo add-apt-repository --yes --update ppa:ansible/ansible
+    4  sudo apt install ansible -y
+    9  ansible --version
+
+
+keyless ssh-connectivity
+cd ~
+   20  pwd
+   21  ls -la
+   22  cd .ssh\
+   23  cd .ssh
+   24  ls -l
+   25  cat authorized_keys
+   26  ls -l
+   27  ssh-keygen
+   28  ls -l
+   29  cat id_rsa.pub
+
+Running ansible adhoc commands to verify the ssh connectivity-->
+   30  ansible host1 -m ping
+   31  ansible host2 -m ping
+   32  ansible dev -m ping
+
+Executing first playbook-->
+   33  cd /etc/ansible
+   34  vi first-playbook.yaml
+   35  ansible-playbook first-playbook.yaml
+   36  history

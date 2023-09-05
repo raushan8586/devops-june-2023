@@ -1,0 +1,52 @@
+Elasticsearch -->
+ubuntu@ip-172-31-3-38:~/elasticsearch-8.8.2/bin$ history
+    1  sudo apt update -y
+    2  wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.8.2-linux-x86_64.tar.gz
+    3  wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.8.2-linux-x86_64.tar.gz.sha512
+    4  shasum -a 512 -c elasticsearch-8.8.2-linux-x86_64.tar.gz.sha512
+    5  tar -xzf elasticsearch-8.8.2-linux-x86_64.tar.gz
+    6  ls -l
+    7  cd elasticsearch-8.8.2/
+    8  cd bin
+    9  ls -l
+   10  ./elasticsearch
+
+
+Kibana --> 
+2  curl -O https://artifacts.elastic.co/downloads/kibana/kibana-8.8.2-linux-x86_64.tar.gz
+    3  curl https://artifacts.elastic.co/downloads/kibana/kibana-8.8.2-linux-x86_64.tar.gz.sha512 | shasum -a 512 -c -
+    4  tar -xzf kibana-8.8.2-linux-x86_64.tar.gz
+    5  ls -l
+    6  cd kibana-8.8.2/
+    7  ls -l
+    8  cd config
+    9  ls -l
+   10  vi kibana.yml
+   11  cd ../bin
+   12  ls -l
+   13  ./kibana
+
+--> edit kibana.yml and change the hostname with Private IP --> server.host: "172.31.3.38"
+--> use the public ip in the browser though
+
+
+Elastic Agent -->
+
+1  curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.8.2-linux-x86_64.tar.gz
+    2  ls -l
+    3  tar xzvf elastic-agent-8.8.2-linux-x86_64.tar.gz
+    4  ls -l
+    5  cd elastic-agent-8.8.2-linux-x86_64/
+    6  ls -l
+    7  vi elastic-agent.yml
+    8  clear
+    9  ls -l
+
+--> Downloaded the elastic.agent.yml
+
+   10  mv elastic-agent.yml elastic-agent.yml-bkp
+   11  vi elastic-agent.yml  --> Edit from the downloaded one
+   12  sudo ./elastic-agent install
+   13  history
+
+Discover, logs, metrics, create dashboards.

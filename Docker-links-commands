@@ -1,0 +1,158 @@
+https://hub.docker.com/
+https://docs.docker.com/
+
+Docker Commands
+https://docs.docker.com/engine/reference/run/
+
+Dockerfile Link: https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
+https://docs.docker.com/network/drivers/
+https://docs.docker.com/compose/samples-for-compose/
+
+
+sudo su -
+apt update -y
+docker version
+  246  apt install docker.io -y
+  247  clear
+  248  docker version
+  249  history
+
+
+Install apache2 on the ubuntu VM
+ apt update -y
+  277  apt install -y apache2
+  279  systemctl status apache2
+  281  systemctl enable apache2
+
+
+Deploy httpd (docker image) as a container
+
+  282  docker version
+  283  docker info
+  284  clear
+  285  docker images
+  286  docker pull httpd
+  287  docker images
+  288  docker ps
+  289  docker ps -a
+  290  docker container ls
+  291  docker container ls -a
+  292  docker inspect ad303d7f80f9
+  293  docker images
+  294  docker ps
+  295  clear
+  296  docker images
+  298  lsof -i -P -n | grep LISTEN
+  299  docker run -itd -p 82:80 httpd
+  302  docker ps
+  303  clear
+  304  docker ps
+  305  history
+
+docker exec -it e4cc030f3b47 /bin/bash
+
+/usr/local/apache2/htdocs --> index.html
+
+Execute on the container -->
+apt update -y
+   14  apt install -y vim
+   15  vi index.html
+   
+   On the VM -->
+   docker run -itd fedora
+  323  docker ps
+  324  docker stats
+  325  docker ps
+  326  docker stats
+  327  docker ps
+  328  docker exec -it c6c42371bef0 /bin/bash
+  329  docker stats
+  330  docker exec -it c6c42371bef0 /bin/bash
+  331  docker ps
+  332  docker images
+  333  docker commit c6c42371bef0 httpd_new
+  334  docker images
+  335  history
+
+Dockerfile -->
+
+ mkdir my-images
+  339  cd my-images/
+  340  touch Dockerfile
+  341  vi Dockerfile
+  342  cat Dockerfile
+  343  vi Dockerfile
+  344  cat Dockerfile
+  345  vi index1.html
+  346  vi index2.html
+  347  ls -l
+  348  docker build . -t httpd1
+  349  docker images
+  350  docker ps
+  351  docker run -itd -p 83:80 httpd1
+  352  docker ps
+  353  ls -l
+  354  cat Dockerfile
+  355  history
+
+
+Docker Volumes-->
+
+docker volume create intellipaat-volume
+docker volume ls
+  390  docker run -itd --mount source=intellipaat-volume,target=/usr/local/apache2/htdocs -p 82:80 httpd
+  391  docker ps
+  392  docker exec -it 8361bdebacfa /bin/bash
+  393  find / -name intellipaat-volume
+  394  cd /var/lib/docker/volumes/intellipaat-volume
+  395  ls -l
+  396  cd _data
+  397  ls -l
+  398  cat index1.html
+  399  cp index1.html index2.html
+  400  vi index2.html
+  401  ls -l
+  402  cp index.html index3.html
+  403  vi index3.html
+  404  docker run -itd --mount source=intellipaat-volume,target=/usr/local/apache2/htdocs -p 83:80 httpd
+  405  docker ps
+  406  history
+
+Create an account in hub.docker.com. Create a repository
+
+docker login
+  411  docker images
+  412  docker image tag ubuntu1:latest raushan8586/devops-june:latest
+  413  docker image push raushan8586/devops-june:latest
+
+
+Docker Network
+https://www.ipaddressguide.com/cidr
+
+docker network ls
+  419  docker run -itd -p 82:80 httpd1
+  420  docker ps
+  421  docker inspect e25fe3bcd33f
+  422  docker network ls
+
+
+Docker compose
+docker-compose version
+  433  apt install docker-compose -y
+  434  clear
+  435  docker-compose version
+  436  docker ps
+  437  docker rm -f e25fe3bcd33f
+  438  docker ps
+  439  ls -l
+  440  docker-compose up -d
+  441  docker ps
+  442  docker network ls
+  443  docker volume ls
+  444  docker exec -it 5475397e2d8c /bin/bash
+
+mysql -u wordpress -p wordpress
+  423  docker inspect b87a727a36c0
+
+
+

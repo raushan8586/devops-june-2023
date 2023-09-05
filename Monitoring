@@ -1,0 +1,25 @@
+Continuous Monitoring --> why?
+
+1. Health Check
+2. Performance of the system
+3. Alerting
+4. Metrics:
+	CPU
+	Memory
+	Disk
+	Response time
+	Status Code
+	Errors/Exceptions in the logs:
+
+	--> Depends on the architectural components
+	slow queries
+	read/write latency
+
+	Kafka lags
+
+Monitoring tool is required:
+1. Prometheus / Grafana --> Kubernetes
+2. ELK (Elasticsearch, Logstash, Kibana)
+
+Alerting --> monitor 24 * 7
+

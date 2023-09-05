@@ -1,0 +1,24 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-grafana-on-ubuntu-20-04
+--> Step 1
+
+OR
+https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
+
+44  wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+   45  sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+   46  apt update -y
+   47  sudo apt install grafana
+   48  sudo systemctl start grafana-server
+   49  sudo systemctl status grafana-server
+   50  sudo systemctl enable grafana-server
+   51  lsof -i -P -n | grep LISTEN
+   52  history
+
+
+--> open port 3000 in SG
+
+Import this dashboard
+https://grafana.com/grafana/dashboards/1860-node-exporter-full/
+import 1860
+
+https://grafana.com/grafana/dashboards/15172-node-exporter-for-prometheus-dashboard-based-on-11074/
